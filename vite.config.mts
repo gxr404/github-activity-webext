@@ -80,6 +80,11 @@ export const sharedConfig: UserConfig = {
       'vue-demi',
     ],
   },
+  css: {
+    preprocessorOptions: {
+      scss: { api: 'modern-compiler' },
+    },
+  },
 }
 
 export default defineConfig(({ command }) => ({
