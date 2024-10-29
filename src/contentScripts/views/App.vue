@@ -28,6 +28,5 @@ if (pathArr.length === 1) {
     >
       User Activity
     </a>
-    {{ activityHref }}
   </span>
 </template>

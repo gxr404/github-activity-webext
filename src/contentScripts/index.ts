@@ -21,13 +21,17 @@ import { setupApp } from '~/logic/common-setup'
 
 function main() {
   const followingContainer = document.querySelector('.js-profile-editable-replace .user-following-container')
-  if (!followingContainer)
+  const userProfileContainer = document.querySelector('.js-profile-editable-replace .js-profile-editable-edit-button')?.parentElement
+  if (!followingContainer && !userProfileContainer)
     return
   if (document.getElementById(__NAME__))
     return
 
   console.log(`[${__NAME__}]: followingContainer`, followingContainer)
-
+  console.log(`[${__NAME__}]: userProfileContainer`, userProfileContainer)
+  const targetContainer = followingContainer || userProfileContainer
+  if (!targetContainer)
+    return
   const container = document.createElement('div')
   container.id = __NAME__
   const root = document.createElement('div')
@@ -38,7 +42,7 @@ function main() {
   styleEl.setAttribute('href', browser.runtime.getURL('dist/contentScripts/style.css'))
   shadowDOM.appendChild(styleEl)
   shadowDOM.appendChild(root)
-  followingContainer.appendChild(container)
+  targetContainer.appendChild(container)
   const app = createApp(App)
   setupApp(app)
   app.mount(root)
