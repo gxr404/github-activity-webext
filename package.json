@@ -28,7 +28,9 @@
     "test": "vitest test",
     "test:e2e": "playwright test",
     "postinstall": "simple-git-hooks",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "release:patch": "pnpm version patch && git push && git push origin --tags",
+    "build-pack": "pnpm run build && pnpm run pack:zip"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.27.0",
