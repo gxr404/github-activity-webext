@@ -1,3 +1,15 @@
 import { useWebExtensionStorage } from '~/composables/useWebExtensionStorage'
 
-export const storageDemo = useWebExtensionStorage('webext-demo', 'Storage Demo')
+interface GithubActivityConfig {
+  isCustomService: boolean
+  customService: string
+}
+
+function getDefaultConfig(): GithubActivityConfig {
+  return {
+    isCustomService: false,
+    customService: '',
+  }
+}
+
+export const storageConfig = useWebExtensionStorage('github-activity-config', getDefaultConfig())

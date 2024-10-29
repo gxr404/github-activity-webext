@@ -10,4 +10,10 @@ export default defineConfig({
   transformers: [
     transformerDirectives(),
   ],
+  theme: {
+    colors: {
+      bbg: 'var(--background)',
+      c1: 'rgb(var(--text-color))',
+    },
+  },
 })

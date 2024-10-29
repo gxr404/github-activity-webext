@@ -18,3 +18,64 @@ body,
     hover:opacity-100 hover:text-teal-600;
   font-size: 0.9em;
 }
+
+
+:root {
+  color: black;
+  --background: #f4f4f4;
+  --text-color: #374151;
+
+  --border-color: var(--el-border-color);
+  --border-color-light: var(--el-border-color-lighter);
+  --bg-color-mute: #fff;
+
+  .el-switch {
+    /* --el-switch-on-color: '#374151' */
+    --el-switch-on-color: black;
+    --el-switch-border-color: rgb(229, 231, 235);
+    --el-switch-off-color: #e5e7ed;
+  }
+  .el-input {
+    --el-input-focus-border-color: black;
+  }
+}
+
+html.dark {
+  color-scheme: dark;
+  color: white;
+  --background: #121212;
+  --text-color: #e5e7eb;
+  --bg-color-mute: #2c2c2c;
+
+  .el-switch {
+    /* --el-switch-on-color: '#414243'; */
+    --el-switch-on-color: #b68132;
+    --el-switch-border-color: #414243;
+    --el-switch-off-color: #b8babf;
+  }
+  .el-input {
+    --el-input-focus-border-color: #b68132;
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 2147483646;
+}
+
+.dark::view-transition-old(root) {
+  z-index: 2147483646;
+}
+
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
