@@ -18,6 +18,14 @@ watch(isCustomService, () => {
   }
 })
 
+watch(storageConfig, () => {
+  isCustomService.value = storageConfig.value.isCustomService
+  customService.value = storageConfig.value.customService
+}, {
+  once: true,
+  deep: true,
+})
+
 // eslint-disable-next-line regexp/no-unused-capturing-group, regexp/no-misleading-capturing-group
 const urlReg = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})(:\d{1,5})?(\/[\w.-]*)*(\?[\w=&.]*)?$/i
 
