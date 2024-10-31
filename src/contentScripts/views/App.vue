@@ -25,6 +25,7 @@ if (pathArr.length === 1) {
     <a
       class="btn btn-block mt-2"
       :href="activityHref"
+      target="_blank"
     >
       User Activity
     </a>
