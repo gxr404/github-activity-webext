@@ -9,8 +9,8 @@
 
 ## 安装
 
-- Chrome Web Store
-- Local
+- [Chrome Web Store](https://chromewebstore.google.com/detail/github-activity/oniblhabpoedbigijdfkmogeieamlbkk?authuser=0&hl=zh-CN)
+- [Local](https://github.com/gxr404/github-activity-webext/releases)
 
 ## 预览
 
@@ -19,6 +19,8 @@
 <img src="./docs/assets/preview_2.png" width="500">
 
 <img src="./docs/assets/preview_3.png" width="500">
+
+<img src="./docs/assets/preview_4.png" width="500">
 
 ## 建议
 

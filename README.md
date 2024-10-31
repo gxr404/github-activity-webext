@@ -8,8 +8,8 @@ A browser plug-in that adds a user activity button to the github user page to ju
 
 ## Install
 
-- Chrome Web Store
-- Local
+- [Chrome Web Store](https://chromewebstore.google.com/detail/github-activity/oniblhabpoedbigijdfkmogeieamlbkk?authuser=0&hl=zh-CN)
+- [Local](https://github.com/gxr404/github-activity-webext/releases)
 
 ## Preview
 
@@ -18,6 +18,8 @@ A browser plug-in that adds a user activity button to the github user page to ju
 <img src="./docs/assets/preview_2.png" width="500">
 
 <img src="./docs/assets/preview_3.png" width="500">
+
+<img src="./docs/assets/preview_4.png" width="500">
 
 ## suggestion
 
